@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Color Theme Swatches in Hex */
+  /* .golden-leaves-against-bare-trees-in-the-forest-1-hex { color: #F2E641; }
+.golden-leaves-against-bare-trees-in-the-forest-2-hex { color: #F2CB05; }
+.golden-leaves-against-bare-trees-in-the-forest-3-hex { color: #F2B705; }
+.golden-leaves-against-bare-trees-in-the-forest-4-hex { color: #F29F05; }
+.golden-leaves-against-bare-trees-in-the-forest-5-hex { color: #D96704; } */
+
+  /* Color Theme Swatches in RGBA */
+  /* .golden-leaves-against-bare-trees-in-the-forest-1-rgba { color: rgba(242, 230, 65, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-2-rgba { color: rgba(242, 202, 4, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-3-rgba { color: rgba(242, 182, 4, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-4-rgba { color: rgba(242, 159, 4, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-5-rgba { color: rgba(216, 103, 4, 1); } */
+
+  /* Color Theme Swatches in HSLA */
+  /* .golden-leaves-against-bare-trees-in-the-forest-1-hsla { color: hsla(56, 87, 60, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-2-hsla { color: hsla(50, 96, 48, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-3-hsla { color: hsla(45, 96, 48, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-4-hsla { color: hsla(39, 96, 48, 1); }
+.golden-leaves-against-bare-trees-in-the-forest-5-hsla { color: hsla(28, 96, 43, 1); } */
+  /* color: rgba(232, 230, 227, 0.87); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
 }
+/*
+h1 {
+  margin: 0;
+  padding: 0;
+}
+input {
+  color: rgba(232, 230, 227, 0.87);
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------------------------- Navigation Styles ------------------------- */
+/* .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 5px clamp(15px, 10%, 100px);
+  background: rgb(43, 42, 42);
   color: white;
+  min-height: 3.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-heading {
+  font-size: 2.5rem;
 }
+.nav > a {
+  /* color: white; 
+  margin: clamp(10px, 1vw, 40px);
+  font-size: clamp(20px, 1.5vw, 30px);
+} */
+/* --------------------------- Basic Elements ---------------------------  */
+/* .container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10vh clamp(15px, 10%, 100px);
+}
+.title {
+  padding-bottom: 1.5rem;
+  font-size: 2em;
+} */
+/* ----------------------------- form styling -------------------------------- */
+/* form {
+  margin: 0.7rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+div {
+  width: 100%;
+}
+input {
+  margin: 0rem 1rem;
+  width: 100%;
+}
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+input[type="password"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+} */
