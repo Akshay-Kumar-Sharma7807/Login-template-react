@@ -22,6 +22,17 @@ export default function Main(props) {
     // Peer js
     // const peer = new Peer();
 
+
+  }, [])
+  var getuser =()=>{
+    Axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/user"
+    }).then((res) => setUser(res.data.username));
+  }
+  //=============================================================================
+  
 let messagesEl = document.querySelector('.messages');
 let peerIdEl = document.querySelector('#connect-to-peer');
 let videoEl = document.querySelector('.remote-video');
@@ -93,16 +104,7 @@ let connectToPeer = () => {
 };
 
 window.connectToPeer = connectToPeer;
-
-
-  }, [])
-  var getuser =()=>{
-    Axios({
-      method: "GET",
-      withCredentials: true,
-      url: "http://localhost:4000/user"
-    }).then((res) => setUser(res.data.username));
-  }
+//=========================================================================== == == === ==== 
   return (
     <ThemeProvider theme={props.theme}>
       <Container component="main" maxWidth="xs">
@@ -115,11 +117,11 @@ window.connectToPeer = connectToPeer;
       {/* <Typography>{user ? 'Hello '+user: 'NO user'}</Typography> */}
       <video class="remote-video" autoplay></video>
     <input type="text" id="connect-to-peer" />
-    <button onclick="connectToPeer()">
+    <button onClick={connectToPeer}>
       Connect
     </button>
     
-    <div class="messages">
+    <div className="messages">
       
     </div>
 
